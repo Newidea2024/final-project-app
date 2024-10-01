@@ -1,17 +1,10 @@
 import React from 'react';
 import ItemCard from './ItemCard';
 
-// Define the shape of an item
-type Item = {
-  id: string;
-  name: string;
-};
+const ItemList = ({ items }) => {
+console.log("Item List items:", items);
 
-interface ItemListProps {
-  items: Item[];
-}
 
-const ItemList: React.FC<ItemListProps> = ({ items }) => {
   return (
     <div className="item-list">
       {items.map(item => (

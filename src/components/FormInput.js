@@ -1,12 +1,6 @@
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 
-interface FormInputProps {
-  label: string;
-  value: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-}
-
-const FormInput: React.FC<FormInputProps> = ({ label, value, onChange }) => {
+const FormInput = ({ label, value, onChange }) => {
   return (
     <div className="form-group">
       <label>{label}</label>

@@ -6,8 +6,7 @@ import UpdateItem from './pages/UpdateItem';
 import CustomNavbar from './components/Navbar';
 import Footer from './components/Footer';
 
-const App: React.FC = () =>
-{
+function App() {
   return (
     <Router>
       <CustomNavbar />
@@ -19,8 +18,6 @@ const App: React.FC = () =>
       <Footer />
     </Router>
   );
-};
+}
 
 export default App;
-
-

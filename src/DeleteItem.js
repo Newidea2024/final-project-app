@@ -1,11 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-interface DeleteItemProps {
-  id: string;
-}
-
-const DeleteItem: React.FC<DeleteItemProps> = ({ id }) => {
+const DeleteItem = ({ id }) => {
   const handleDelete = () => {
     axios.delete(`https://mockapi.io/endpoint/items/${id}`)
       .then(() => alert('Item deleted successfully!'))

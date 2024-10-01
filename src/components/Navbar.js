@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 
-const CustomNavbar: React.FC = () => {
+const CustomNavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Navbar.Brand href="/">MockAPI Project</Navbar.Brand>
